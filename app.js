@@ -25,11 +25,11 @@ var list_oper = "https://www.googleapis.com/drive/v3/files"; //LISTA I FILE
 //OAUTHLINK
 var oauthlink = "https://accounts.google.com/o/oauth2/auth?client_id="+client_id_web+"&response_type=code&redirect_uri=http://localhost:3000/oauthcallback&scope="+scope+"&access_type=online";
 
-app.get('/app/drive', function(req, res){
+app.get('/api/drive', function(req, res){
   res.redirect(oauthlink);
 });
 
-app.get('/app/meteo', function(req, resw){
+app.get('/api/meteo', function(req, resw){
  var http= require('http');
 
 var indirizzo="http://api.openweathermap.org/data/2.5/weather?q=Rome&appid=8ecb4cc7c10c7f17bb297394f3a47ad0"
