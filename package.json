@@ -1,15 +1,16 @@
 {
-  "name": "zero_flowers_pj",
+  "name": "rc",
   "version": "1.0.0",
+  "description": "",
   "main": "app.js",
+  "dependencies": {
+    "amqplib": "^0.5.2",
+    "express": "^4.16.2",
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "amqplib": "^0.5.1",
-    "express": "^4.14.1"
-  }
+  "author": "Paolo Di Pumpo",
+  "license": "ISC"
 }
